@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pri Achmad</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #FDFBFA;
+            color: #333;
+        }
+        .font-display {
+            font-family: 'Playfair Display', serif;
+        }
+        .section-title {
+            font-size: 2.5rem; /* 40px */
+            font-weight: 700;
+            color: #1a202c;
+            position: relative;
+            display: inline-block;
+            text-transform: uppercase;
+        }
+        .section-subtitle {
+            display: inline-block;
+            background-color: #E2E8F0;
+            padding: 0.5rem 1.5rem;
+            border-radius: 9999px;
+            margin-top: 0.5rem;
+            color: #4A5568;
+            font-weight: 500;
+        }
+        .highlight-red {
+            color: #943A27;
+        }
+        .card {
+            background-color: #F7FAFC;
+            border: 1px solid #E2E8F0;
+            border-radius: 1rem;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-xl font-bold text-gray-800">Prihartanto Achmad</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-600 hover:text-black">About Me</a>
+                <a href="#services" class="text-gray-600 hover:text-black">Services</a>
+                <a href="#tools" class="text-gray-600 hover:text-black">Tools</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-black">Testimonials</a>
+                <a href="#contact" class="text-gray-600 hover:text-black">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-gray-800">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#about" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">About Me</a>
+            <a href="#services" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Services</a>
+            <a href="#tools" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Tools</a>
+            <a href="#testimonials" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Testimonials</a>
+            <a href="#contact" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="min-h-screen flex items-center pt-20">
+            <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <img src="pri main.jpeg" alt="[Gambar] Prihartanto Achmad sedang bekerja" class="rounded-lg shadow-2xl w-full h-auto object-cover">
+                    <div class="absolute bottom-0 left-0 right-0 bg-gray-900/70 text-white p-6 rounded-b-lg">
+                        <p class="text-lg italic">Focus on what matters; we'll take care of the rest virtually</p>
+                    </div>
+                </div>
+                <div class="text-center md:text-left">
+                    <h1 class="font-display text-5xl md:text-6xl font-bold text-gray-800 leading-tight">Prihartanto Achmad</h1>
+                    <p class="mt-4 text-lg font-semibold highlight-red">
+                        CMA, M.Acc. | Senior Finance Leader & Global Business Partner | Ex-Siemens | Specializing in FP&A, Marketing ROI & Tech Ops
+                    </p>
+                    <a href="#contact" class="mt-8 inline-block bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-3 px-8 rounded-lg transition-colors">
+                        Reach out
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-24 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title">ABOUT ME</h2><br>
+                <span class="section-subtitle">Turning Strategy Into Systems, So You Can Focus on What Matters</span>
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-12 items-center text-left">
+                    <div class="md:col-span-2">
+                        <h3 class="text-2xl font-bold mb-4">About Me</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Hello, I'm Achmad Prihartanto. For over 20 years, including 14 in the high-precision environment of Siemens, I've managed the financial engine of technology-driven companies. My foundation is a Master's degree in Finance, and my framework is the strategic discipline of a Certified Management Accountant (CMA).
+                        </p>
+                        <p class="mt-4 text-gray-600 leading-relaxed">
+                            I view finance not as a back-office function, but as a company's strategic co-pilot. My expertise lies in building the bridge between marketing spend and financial results. I don't just report on the budget; I partner with marketing and operations teams to answer the most critical question: "Are we acquiring customers profitably?"
+                        </p>
+                        <h4 class="text-xl font-bold mt-8 mb-4">I specialize in:</h4>
+                        <ul class="space-y-4">
+                            <li><strong class="highlight-red">Financial Planning & Analysis (FP&A):</strong> Acting as a strategic business partner to leadership, translating complex data into actionable insights for long-range planning, investment decisions, and capital allocation.</li>
+                            <li><strong class="highlight-red">Marketing & Sales Funnel ROI Analysis:</strong> Optimizing go-to-market spend by building financial models that connect marketing investments directly to profitable customer acquisition and lifetime value (CLV).</li>
+                            <li><strong class="highlight-red">Operational Excellence:</strong> Streamlining processes to improve efficiency and protect margins, a discipline honed at Siemens.</li>
+                        </ul>
+                        <p class="mt-6 text-gray-600 leading-relaxed">
+                            I am currently seeking a senior leadership role where I can apply my unique blend of financial rigor and marketing acumen to help a technology-focused company scale profitably. Let's connect to discuss how I can bring financial clarity and strategic direction to your growth objectives.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="pri-pict1.jpg" alt="[Foto] profil Achmad Prihartanto" class="rounded-full shadow-lg mx-auto w-64 h-64 md:w-80 md:h-80 object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-24">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title">CORE COMPETENCIES</h2><br>
+                <a href="https://prihartanto-portfolio.my.canva.site/fp-a-insight-project" target="_blank" rel="noopener noreferrer">
+                    <span class="section-subtitle">FP&A professional with certified digital marketing skills | Maximize marketing ROI</span>
+                </a>
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+                    
+                    <!-- Finance Management -->
+                    <div class="card">
+                        <a href="https://prihartanto-portfolio.my.canva.site/fp-a-insight-project" target="_blank" rel="noopener noreferrer" class="block h-full group transition-transform duration-200 active:scale-95 active:[&>h3]:translate-y-0.5">
+                            <h3 class="text-xl font-bold highlight-red text-center group-hover:underline transition-transform duration-100">
+                                FINANCE MANAGEMENT | FP&A
+                                <span class="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">&rarr;</span>
+                            </h3>
+                            <ul class="mt-6 space-y-3 list-disc list-inside text-gray-700">
+                                <li><strong>Budgeting Forecasting Analysis:</strong> Predict better. Plan smarter. Grow steady.</li>
+                                <li><strong>KPI dashboards:</strong> One view. All metrics. Drive results.</li>
+                                <li><strong>Pipeline analytics:</strong> Full visibility. Better forecasting. More wins.</li>
+                                <li><strong>Executive Advisory (M&A):</strong> Structure deals. Reduce risk. Right deals.</li>
+                                <li><strong>Credit Risk:</strong> Counterparty Default Loss Prevention.</li>
+                                <li><strong>Market Risk:</strong> Exposure to Price Fluctuations.</li>
+                                <li><strong>Compliance:</strong> Risk Shield, Governance Partner.</li>
+                            </ul>
+                        </a>
+                    </div>
+
+                    <!-- Marketing & Sales -->
+                    <div class="card">
+                         <a href="https://prihartanto-portfolio.my.canva.site/lead-gen-strategy-market-research" target="_blank" rel="noopener noreferrer" class="block h-full group transition-transform duration-200 active:scale-95 active:[&>h3]:translate-y-0.5">
+                            <h3 class="text-xl font-bold highlight-red text-center group-hover:underline transition-transform duration-100">
+                                MARKETING & SALES FUNNEL ROI ANALYSIS
+                                <span class="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">&rarr;</span>
+                            </h3>
+                            <ul class="mt-6 space-y-3 list-disc list-inside text-gray-700">
+                                <li><strong>Social Media Strategy:</strong> Funnel Architecture & Mapping | Platform.</li>
+                                <li><strong>Digital Campaign & Ads:</strong> Performance Ads | Meta Ads | LinkedIn Ads.</li>
+                                <li><strong>Lead Generation:</strong> Market research | Lead magnet | Landing page.</li>
+                                <li><strong>Email Marketing:</strong> Personalized email | Automation.</li>
+                                <li><strong>Social Analytic & Trend:</strong> Dashboard | Continuous Engagement.</li>
+                            </ul>
+                        </a>
+                    </div>
+
+                    <!-- Operational Excellence (Already good, just adding active state) -->
+                    <div class="card">
+                        <a href="https://prihartanto-portfolio.my.canva.site/financial-operations" target="_blank" rel="noopener noreferrer" class="block h-full group transition-transform duration-200 active:scale-95 active:[&>h3]:translate-y-0.5">
+                            <h3 class="text-xl font-bold highlight-red text-center group-hover:underline transition-transform duration-100">
+                                OPERATIONAL EXCELLENCE
+                                <span class="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">&rarr;</span>
+                            </h3>
+                            <ul class="mt-6 space-y-3 list-disc list-inside text-gray-700">
+                               <li><strong>Lean Six Sigma | Agile (Scrum & Kanban):</strong> Delivers faster and data-driven improvements.</li>
+                               <li><strong>Project Management:</strong> Clear deadlines and smooth delivery.</li>
+                               <li><strong>ERP | Bookkeeping | CRM | VA:</strong> Track every cent and Automate workflows.</li>
+                            </ul>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Tools Section -->
+        <section id="tools" class="py-24 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title">TOOLS I'M PROFICIENT</h2><br>
+                <span class="section-subtitle">Turning tools into client-converting power</span>
+                <div class="mt-16 text-left space-y-12">
+                    <!-- Lead Generation -->
+                    <div>
+                        <h3 class="text-2xl font-bold highlight-red border-b-2 border-gray-200 pb-2 mb-4">Lead Generation</h3>
+                        <div class="grid md:grid-cols-2 gap-8 items-center">
+                            <ul class="space-y-2 list-disc list-inside text-gray-700">
+                                <li><strong>CRM platforms:</strong> HubSpot for managing lead pipelines</li>
+                                <li><strong>Email marketing:</strong> Mailchimp (automating campaigns)</li>
+                                <li><strong>Prospecting:</strong> LinkedIn Sales Navigator (targeted lead)</li>
+                                <li><strong>Editing picture & video:</strong> Capcut & Clipchamp</li>
+                                <li><strong>Promotional content:</strong> Tilda & Canva (eye-catching lead magnets & landing page)</li>
+                            </ul>
+                            <div class="flex flex-wrap gap-4 justify-center items-center">
+                                <img src="https://cdn.simpleicons.org/canva/3B93A8" alt="Canva Logo" class="h-12">
+                                <img src="https://cdn.simpleicons.org/googlemeet/00897B" alt="Google Meet Logo" class="h-12">
+                                <img src="https://cdn.simpleicons.org/mailchimp/FFE01B" alt="Mailchimp Logo" class="h-12">
+                                <img src="https://cdn.simpleicons.org/hubspot/FF7A59" alt="HubSpot Logo" class="h-12">
+                                <img src="https://cdn.simpleicons.org/openai/412991" alt="ChatGPT Logo" class="h-12">
+                                <img src="https://cdn.simpleicons.org/zoom/2D8CFF" alt="Zoom Logo" class="h-12">
+                                <img src="Microsoft_Office_Teams_(2018–present).svg.png" alt="Microsoft Teams Logo" class="h-12">
+                                <img src="pngimg.com - linkedIn_PNG15.png" alt="LinkedIn Logo" class="h-12">
+                                <img src="https://cdn.simpleicons.org/instagram/E4405F" alt="Instagram Logo" class="h-12">
+                                <img src="CapCut_logo.png" alt="CapCut Logo" class="h-12">
+                                <img src="Microsoft_Clipchamp.png" alt="Clipchamp Logo" class="h-12">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Business Administration -->
+                    <div>
+                        <h3 class="text-2xl font-bold highlight-red border-b-2 border-gray-200 pb-2 mb-4">Business Administration</h3>
+                        <div class="grid md:grid-cols-2 gap-8 items-center">
+                             <ul class="space-y-2 list-disc list-inside text-gray-700">
+                                <li><strong>Documentation:</strong> SAP, Google Workspace, PlanOn</li>
+                                <li><strong>Real Estate Management:</strong> PlanOn</li>
+                                <li><strong>Reporting:</strong> Tableau, VBA & think-cell</li>
+                            </ul>
+                            <div class="flex flex-wrap gap-4 justify-center items-center">
+                                <img src="tableau.png" alt="Tableau Logo" class="h-16">
+                                <img src="https://cdn.simpleicons.org/sap/008FD3" alt="SAP Logo" class="h-16">
+                                <img src="think cell.png" alt="think-cell Logo" class="h-16">
+                                <img src="planon-logo-png_seeklogo-478768.png" alt="PlanOn Logo" class="h-16">
+                                <img src="vba.png" alt="VBA Logo" class="h-16">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Management -->
+                    <div>
+                        <h3 class="text-2xl font-bold highlight-red border-b-2 border-gray-200 pb-2 mb-4">Project Management</h3>
+                        <div class="grid md:grid-cols-2 gap-8 items-center">
+                             <ul class="space-y-2 list-disc list-inside text-gray-700">
+                                <li><strong>Plan & manage tasks:</strong> Monday.com, Ms Office, Notion & Trello</li>
+                            </ul>
+                            <div class="flex flex-wrap gap-4 justify-center items-center">
+                                <img src="monday.com" alt="Monday.com Logo" class="h-12">
+                                <img src="Microsoft_Office_13-16_Logo.png" alt="MS Office Logo" class="h-12">
+                                <img src="https://cdn.simpleicons.org/trello/0079BF" alt="Trello Logo" class="h-12">
+                                <img src="https://cdn.simpleicons.org/notion/000000" alt="Notion Logo" class="h-12">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-24">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title">TESTIMONIALS</h2><br>
+                <span class="section-subtitle">Hear firsthand how our solution transformed businesses and delivered real results</span>
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="card text-left">
+                        <blockquote class="text-gray-600 italic">
+                            "I highly commend Prihartanto (Head of Business Commercial Siemens Real Estate) for successfully managing Siemens Real Estate operations remotely across major cities in Indonesia... Despite the geographical and logistical challenges, he consistently delivered excellent results—ensuring smooth facility operations, planning, controlling, reporting, compliance, and vendor coordination while upholding Siemens' high standards."
+                        </blockquote>
+                        <div class="mt-4 flex items-center">
+                            <div class="ml-4">
+                                <p class="font-bold">H. Waitt</p>
+                                <p class="text-sm text-gray-500">Head of Siemens Real Estate</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card text-left">
+                        <blockquote class="text-gray-600 italic">
+                            "I am proud to recognize Prihartanto (Head of Business Administration & Controlling) for their outstanding performance on a task force as a Project Management in leading our Productivity Management initiative... He successfully implemented process improvements that resulted in a remarkable efficiency up to 18% annually. His exceptional leadership and problem-solving skills... sets a high standard for project execution within our organization."
+                        </blockquote>
+                        <div class="mt-4 flex items-center">
+                            <img src="CPHALKE.jpg" alt="Foto C. Pahlke" class="w-12 h-12 rounded-full">
+                            <div class="ml-4">
+                                <p class="font-bold">C. Pahlke</p>
+                                <p class="text-sm text-gray-500">Finance Director Siemens Energy</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card text-left">
+                        <blockquote class="text-gray-600 italic">
+                            "Mentoring Prihartanto has been a truly rewarding experience. He is a dedicated student who consistently puts in his best effort. His commitment to learning and growth is admirable, and it was a joy to witness his progress. I have no doubt that he will achieve great things in the future. Wishing him all the best in the journey ahead."
+                        </blockquote>
+                        <div class="mt-4 flex items-center">
+                            <img src="APRILIA CHIU.jpg" alt="Foto Aprilia Ciu" class="w-12 h-12 rounded-full">
+                            <div class="ml-4">
+                                <p class="font-bold">Aprilia Ciu</p>
+                                <p class="text-sm text-gray-500">Personel Manager & SA SGBVA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card text-left">
+                        <blockquote class="text-gray-600 italic">
+                            "'Pri' expertly managed all aspects of the finance department, earning my highest commendation."
+                        </blockquote>
+                        <div class="mt-4 flex items-center">
+                            <img src="ALUFF.jpg" alt="Foto A. Luff" class="w-12 h-12 rounded-full">
+                            <div class="ml-4">
+                                <p class="font-bold">A. Luff</p>
+                                <p class="text-sm text-gray-500">Movewell</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certification Section -->
+        <section id="certifications" class="py-24 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title">CERTIFICATION</h2><br>
+                <span class="section-subtitle">Certified expertise in virtual assistance and business administration at your service</span>
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
+                    <div class="text-center">
+                        <h3 class="text-lg font-bold highlight-red">CERTIFIED VIRTUAL ASSISTANT - MARKETING - LEAD GENERATION - SGBVA SINGAPORE</h3>
+                        <p class="text-gray-500 mt-1">Assisting business owner to growth through social media</p>
+                        <img src="certificate VA.jpg" alt="[Gambar] Sertifikat Virtual Assistant" class="mt-4 mx-auto shadow-lg rounded-lg">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-lg font-bold highlight-red">CERTIFIED MANAGEMENT ACCOUNTANT - ICMA AUSTRALIA</h3>
+                        <p class="text-gray-500 mt-1">Commercial Business, Financial Planning & Reporting</p>
+                        <img src="certificate CMA.jpg" alt="[Gambar] Sertifikat Management Accountant" class="mt-4 mx-auto shadow-lg rounded-lg">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-lg font-bold highlight-red">MASTER MANAGEMENT ACCOUNTING - UMB UNIVERSITY</h3>
+                        <p class="text-gray-500 mt-1">Management Finance and Accounting</p>
+                        <img src="certificate Master.jpg" alt="[Gambar] Ijazah Master Management Accounting" class="mt-4 mx-auto shadow-lg rounded-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-24">
+            <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                 <div class="text-center">
+                    <h2 class="section-title highlight-red">Reach out</h2>
+                    <div class="mt-12">
+                        <p class="text-3xl font-bold text-gray-800">PRIHARTANTO ACHMAD</p>
+                        <p class="mt-4 text-gray-600 font-semibold">CONNECT WITH ME</p>
+                        <div class="mt-4 flex justify-center space-x-6">
+                            <!-- Instagram -->
+                            <a href="https://www.instagram.com/prihartanto.achmad/" target="_blank" rel="noopener noreferrer" class="text-pink-600 hover:text-pink-800" title="Instagram">
+                                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.08 2.525c.636-.247 1.363-.416 2.427-.465C9.53 2.013 9.884 2 12.315 2zM11.999 7.44a4.555 4.555 0 100 9.11 4.555 4.555 0 000-9.11zm0 7.442a2.887 2.887 0 110-5.773 2.887 2.887 0 010 5.773zM16.949 6.25a1.223 1.223 0 100 2.446 1.223 1.223 0 000-2.446z" clip-rule="evenodd"></path></svg>
+                            </a>
+                            <!-- LinkedIn -->
+                            <a href="https://www.linkedin.com/in/prihartantoachmad/" target="_blank" rel="noopener noreferrer" class="text-blue-700 hover:text-blue-900" title="LinkedIn">
+                                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path></svg>
+                            </a>
+                            <!-- X -->
+                            <a href="https://x.com/printoachmad" target="_blank" rel="noopener noreferrer" class="text-black hover:text-gray-700" title="X">
+                                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
+                            </a>
+                            <!-- Email -->
+                            <a href="mailto:prihartanto.achmad01@gmail.com" target="_blank" class="text-red-600 hover:text-red-800" title="Email">
+                                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M2.5 5.5h19c.8 0 1.5.7 1.5 1.5v10c0 .8-.7 1.5-1.5 1.5h-19c-.8 0-1.5-.7-1.5-1.5v-10c0-.8.7-1.5 1.5-1.5zM3.1 7L12 12.4 20.9 7H3.1zM2 18h20V7.9l-10 6.1L2 7.9V18z"></path></svg>
+                            </a>
+                        </div>
+                        <div class="mt-8">
+                            <a href="#home" class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-6 rounded-lg">
+                                Back to Top
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                 <div>
+                    <img src="contact image.png" alt="[Gambar] Seseorang sedang mengetik di laptop" class="rounded-lg shadow-lg w-full h-auto object-cover">
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
